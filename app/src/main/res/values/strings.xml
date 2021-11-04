@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Student</string>
+    <string name="welcome_to_student_app">Welcome to Student App</string>
+    <string name="sign_in_to_continue">Sign-in to continue</string>
+    <string name="user_id">USER ID</string>
+    <string name="enter_your_user_id">Enter your user id</string>
+    <string name="password">PASSWORD</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="sign_in">SIGN-IN</string>
+    <string name="subjects">Subjects</string>
+    <string name="hello">Hello,</string>
+    <string name="image_icon">image_icon</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="ramesh_s">Ramesh S</string>
+    <string name="notes">Notes</string>
+    <string name="links">Links</string>
+    <string name="hw">HW</string>
+    <string name="time_table">Time Table</string>
+    <string name="mobile_communication">Mobile Communication</string>
+    <string name="rakesh_c_r">Rakesh C R</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Student" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">#4188ff</item>
+        <item name="android:navigationBarColor">#f1f1f1</item>
+    </style>
+    <style name="SplashTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">#4188ff</item>
+        <item name="android:navigationBarColor">#4188ff</item>
+    </style>
+    <style name="MainTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">#009900</item>
+        <item name="android:navigationBarColor">#008000</item>
+    </style>
+    <style name="zoomAlert">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+</resources>

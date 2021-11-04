@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4188ff">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/pan_top">
+
+        <ImageView
+            android:id="@+id/img_pro"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/boy"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/image_icon" />
+
+        <ImageView
+            android:id="@+id/img_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_signout"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/image_icon" />
+
+        <TextView
+            android:layout_below="@+id/img_pro"
+            android:id="@+id/txt_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp"
+            android:paddingEnd="1dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_name_pro"
+            android:padding="10dp"
+            android:layout_below="@+id/txt_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/pan_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/curved_pan_bottom"
+        android:orientation="vertical"
+        android:id="@+id/pan_list">
+
+        <TextView
+            android:id="@+id/txt_head_subject"
+            android:text="@string/subjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#232C33"
+            android:padding="10dp"/>
+
+        <ListView
+            android:id="@+id/list_subject"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:dividerHeight="0.5dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

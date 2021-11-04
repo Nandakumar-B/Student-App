@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#4188ff">
+
+	<LinearLayout
+		android:id="@+id/pan_authtop"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_margin="10dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/txt_name_auth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="25sp"
+			android:padding="10dp"
+			android:text="@string/welcome_to_student_app"/>
+
+		<TextView
+			android:id="@+id/txt_info_auth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="15sp"
+			android:padding="10dp"
+			android:text="@string/sign_in_to_continue"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/pan_authform"
+		android:orientation="vertical"
+		android:padding="15dp"
+		android:layout_margin="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_centerInParent="true"
+		android:background="@drawable/card_background"
+		android:elevation="10dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/user_id"
+			android:padding="5dp"
+			android:layout_marginStart="5dp"
+			android:textColor="#000000"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="number"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_margin="10dp"
+			android:background="@drawable/input_selector"
+			android:hint="@string/enter_your_user_id"
+			android:padding="10dp"
+			android:textSize="15sp"
+			android:id="@+id/et_mail"
+			android:autofillHints="" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/password"
+			android:padding="5dp"
+			android:layout_marginStart="5dp"
+			android:textColor="#000000"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:inputType="textPassword"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_margin="10dp"
+			android:background="@drawable/input_selector"
+			android:hint="@string/enter_your_password"
+			android:padding="10dp"
+			android:textSize="15sp"
+			android:id="@+id/et_pass"
+			android:autofillHints="" />
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/sign_in"
+			android:background="@drawable/solid_button"
+			android:textColor="#FFFFFF"
+			android:textSize="15sp"
+			android:layout_margin="10dp"
+			android:id="@+id/btn_auth"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

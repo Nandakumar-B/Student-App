@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f1f1f1">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:background="@drawable/curved_pan_top"
+		android:padding="5dp">
+
+		<ImageView
+			android:id="@+id/img_btn_left"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:background="@drawable/ic_arrow_left"
+			android:contentDescription="@string/image_icon" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/card_pan"
+		android:padding="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/card_background"
+		android:layout_marginTop="70dp"
+		android:elevation="0.1dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_centerHorizontal="true">
+
+		<ImageView
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:id="@+id/img_icon_second"
+			android:layout_margin="10dp"
+			android:elevation="2dp"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:layout_toEndOf="@+id/img_icon_second"
+			android:id="@+id/txt_subname_second"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/subject_name"
+			android:textColor="#414141"
+			android:layout_marginTop="10dp"
+			android:textSize="15sp"
+			android:paddingStart="10dp"
+			android:paddingEnd="0dp"
+			android:layout_marginEnd="10dp"/>
+
+		<TextView
+			android:layout_marginBottom="10dp"
+			android:layout_toEndOf="@+id/img_icon_second"
+			android:id="@+id/txt_teachname_second"
+			android:layout_below="@+id/txt_subname_second"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/ramesh_s"
+			android:textColor="#666666"
+			android:paddingStart="10dp"
+			android:paddingEnd="1dp"
+			android:layout_marginEnd="10dp"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/pan_btn"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/card_pan"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="4">
+
+		<TextView
+			android:layout_weight="0.9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/notes"
+			android:padding="10dp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textSize="11sp"
+			android:textColor="#FFFFFF"
+			android:background="@drawable/solid_background"
+			android:id="@+id/btn_note"/>
+
+		<TextView
+			android:layout_weight="0.9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/links"
+			android:padding="10dp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textSize="11sp"
+			android:textColor="#666666"
+			android:background="@android:color/transparent"
+			android:id="@+id/btn_link"/>
+
+		<TextView
+			android:layout_weight="0.9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/hw"
+			android:padding="10dp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textSize="11sp"
+			android:textColor="#666666"
+			android:background="@android:color/transparent"
+			android:id="@+id/btn_hw"/>
+
+		<TextView
+			android:layout_weight="1.3"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/time_table"
+			android:padding="10dp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textSize="11sp"
+			android:textColor="#666666"
+			android:background="@android:color/transparent"
+			android:id="@+id/btn_time"/>
+
+	</LinearLayout>
+	<ListView
+		android:layout_below="@+id/pan_btn"
+		android:id="@+id/list_note"
+		android:scrollbars="none"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:dividerHeight="0.5dp"
+		android:visibility="visible"/>
+	<ListView
+		android:id="@+id/list_link"
+		android:layout_below="@+id/pan_btn"
+		android:scrollbars="none"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:dividerHeight="0.5dp"
+		android:visibility="gone"/>
+	<ListView
+		android:id="@+id/list_hw"
+		android:layout_below="@+id/pan_btn"
+		android:scrollbars="none"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:dividerHeight="0.5dp"
+		android:visibility="gone"/>
+	<ListView
+		android:id="@+id/list_time"
+		android:layout_below="@+id/pan_btn"
+		android:scrollbars="none"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:dividerHeight="0.5dp"
+		android:visibility="gone"/>
+</RelativeLayout>
+
